@@ -1,0 +1,36 @@
+<div>
+  <input
+    type="checkbox"
+    [checked]="isAdmin"
+    label="Is Admin"
+    (change)="onChange($event)"
+  />
+  <label for="checkbox_id">
+    <span style="font-weight: bold"> Is Admin</span></label
+  >
+</div>
+<div
+  class="mt-5"
+  style="display: flex; justify-content: end; align-items: center"
+>
+  <button
+    pButton
+    pRipple
+    label="Yes"
+    icon="pi pi-check"
+    iconPos="left"
+    class="p-button-text p-button-success p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onYesClick()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    label="No"
+    icon="pi pi-times"
+    iconPos="left"
+    class="p-button-text p-button-danger p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onClose()"
+  ></button>
+</div>

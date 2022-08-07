@@ -1,0 +1,13 @@
+.isactive {
+  color: var(--cyan-700);
+  font-weight: bold;
+}
+
+.isinactive {
+  color: var(--cyan-100);
+  font-weight: bold;
+}
+
+.example-margin {
+  margin: 0 12px;
+}

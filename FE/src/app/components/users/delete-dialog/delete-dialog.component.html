@@ -1,0 +1,28 @@
+<h3 style="display: flex; justify-content: center">
+  Are you sure you want to delete user {{ username }}?
+</h3>
+<div
+  class="mt-5"
+  style="display: flex; justify-content: end; align-items: center"
+>
+  <button
+    pButton
+    pRipple
+    label="Yes"
+    icon="pi pi-check"
+    iconPos="left"
+    class="p-button-text p-button-success p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onYesClick()"
+  ></button>
+  <button
+    pButton
+    pRipple
+    label="No"
+    icon="pi pi-times"
+    iconPos="left"
+    class="p-button-text p-button-danger p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onClose()"
+  ></button>
+</div>

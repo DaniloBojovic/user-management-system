@@ -1,0 +1,88 @@
+<div class="card" [formGroup]="userForm">
+  <div class="formgrid grid">
+    <div class="field col">
+      <label for="firstname">First name</label>
+      <input
+        id="firstName"
+        formControlName="firstName"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+    <div class="field col">
+      <label for="lastName">Last name</label>
+      <input
+        id="lastName"
+        formControlName="lastName"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+  </div>
+  <div class="formgrid grid">
+    <div class="field col">
+      <label for="username">Username</label>
+      <input
+        id="username"
+        formControlName="username"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+    <div class="field col">
+      <label for="password">Password</label>
+      <input
+        id="password"
+        formControlName="password"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+  </div>
+  <div class="formgrid grid">
+    <div class="field col">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        formControlName="email"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+    <div class="field col">
+      <label for="status">Status</label>
+      <input
+        id="status"
+        formControlName="status"
+        type="text"
+        class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"
+      />
+    </div>
+  </div>
+</div>
+<div
+  class="mt-5"
+  style="display: flex; justify-content: end; align-items: center"
+>
+  <button
+    pButton
+    pRipple
+    label="Save"
+    icon="pi pi-check"
+    iconPos="left"
+    class="p-button-text p-button-success p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onSave()"
+    [disabled]="!userForm.valid"
+  ></button>
+  <button
+    pButton
+    pRipple
+    label="Cancel"
+    icon="pi pi-times"
+    iconPos="left"
+    class="p-button-text p-button-danger p-button-raised"
+    style="width: 150px; height: 40px; margin: 15px"
+    (click)="onClose()"
+  ></button>
+</div>
